@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: navy;
+    padding: 15px 15px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blog{
+    margin: 50px 50px;
+    display:flex;
+}
+
+p{
+    margin: 15px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    background-color: blueviolet;
+    color: white;
+    padding: 6px 6px;
+    border: none;
+    cursor: pointer;
+}
