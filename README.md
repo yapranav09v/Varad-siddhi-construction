@@ -11,6 +11,8 @@ git checkout -b test
 
 git push origin test
 
+git checkout main
+
 //then delet your test branch from terminal
 
 git branch -d test
