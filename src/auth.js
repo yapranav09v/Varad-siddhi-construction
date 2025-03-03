@@ -1,1 +1,1 @@
-alert('this is auth')
+//  alert('this is auth')
