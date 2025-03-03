@@ -7,7 +7,6 @@ module.exports = {
     entry: { 
         index: path.resolve(__dirname, 'src/index.js'),
         about: path.resolve(__dirname, 'src/about.js'),
-        employe: path.resolve(__dirname, 'src/employe.js'),
         auth: path.resolve(__dirname, 'src/auth.js'),
         database: path.resolve(__dirname, 'src/database.js')
     },
@@ -67,9 +66,9 @@ module.exports = {
     plugins: [
         new htmlWebpackPlugin({
             filename: 'index.html',
-            template: path.resolve(__dirname, 'src/views/index.html'),
+            template: path.resolve(__dirname, 'src/views/Home.html'),
             inject: 'body',
-            chunks: ['index', 'database']
+            chunks: ['index', 'database', 'auth']
         }),
 
         new htmlWebpackPlugin({
@@ -79,12 +78,6 @@ module.exports = {
             chunks: ['about'],
         }),
 
-        new htmlWebpackPlugin({
-            filename: 'employe.html',
-            template: path.resolve(__dirname, 'src/views/employe.html'),
-            inject: 'body',
-            chunks: ['employe', 'auth'],
-        }),
         
         new CopyWebpackPlugin({
             patterns: [
