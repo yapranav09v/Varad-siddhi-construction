@@ -29,6 +29,7 @@ getDocs(colRef)
         Employee.push({...doc.data(), id:doc.id})
     })
     console.log(Employee)
+    alert(Employee)
 })
 .catch(err=>{
     console.log(err.message)
