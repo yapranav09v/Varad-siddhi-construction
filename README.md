@@ -10,4 +10,8 @@ git checkout -b test
 //after done some changes: git add, git commit
 
 git push origin test
+
+//then delet your test branch from terminal
+
+git branch -d test
  
