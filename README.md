@@ -3,17 +3,20 @@
 #first do git pull#
 #then 'npm install' : to install all dependecies
 
-git pull origin master
 
-git checkout -b test
+commands to work on while working with development server:
 
-//after done some changes: git add, git commit
+git pull origin main
 
-git push origin test
+You done some changes: git status
 
-git checkout main
+git add .
 
-//then delet your test branch from terminal
+git commit -m "your comment "
 
-git branch -d test
+git status
+
+git push origin main
+
+
  
