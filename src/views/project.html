@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects</title>
+</head>
+<body>
+  <section class="projects-section">
+    <h2 class="title">Our Project</h2>
+    <p class="subtitle">35+ Projects, All over Maharashtra</p>
+    <div class="button-container">
+      <button class="tab-button active" onclick="showTab('running')">Running</button>
+      <button class="tab-button" onclick="showTab('completed')">Completed</button>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Project cards -->
+      <div class="project-card">
+        <img src="IMAGES/Project 1.png" alt=" Project Image">
+        <div class="project-info">
+          <p>Project Name</p>
+          <button class="details-button">+</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/Project 2.png" alt="Project Image">
+        <div class="project-info">
+          <p>Project Name</p>
+          <button class="details-button">+</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/Project 3.png" alt="Project Image">
+        <div class="project-info">
+          <p>Project Name</p>
+          <button class="details-button">+</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/Project 4.png" alt="Project Image">
+        <div class="project-info">
+          <p>Project Name</p>
+          <button class="details-button">+</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/Project 5.png" alt="Project Image">
+        <div class="project-info">
+          <p>Project Name</p>
+          <button class="details-button">+</button>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="IMAGES/Project 6.png" alt="Project Image">
+        <div class="project-info">
+          <p>Project Name</p>
+          <button class="details-button">+</button>
+        </div>
+      </div>
+    </div>
+    <button class="load-more-button">Load more</button>
+  </section>
+  <script src="script.js"></script>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .footer {
+        background-color: #0d1117;
+        color: #fff;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+    }
+
+    .footer-column h3 {
+        color: #f1c40f;
+        margin-bottom: 10px;
+    }
+
+    .footer-column p,
+    .footer-column a {
+        color: #bbb;
+        text-decoration: none;
+        line-height: 1.6;
+    }
+
+    .footer-column a:hover {
+        color: #f1c40f;
+    }
+
+    .footer-column .button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #f1c40f;
+        color: #0d1117;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .footer-column .button:hover {
+        background-color: #e2b607;
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-column {
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="footer">
+    <!-- Office Contact -->
+    <div class="footer-column">
+        <h3>Office contact</h3>
+        <p><span class="icon">📞</span>+912 345 67890</p>
+        <p><span class="icon">✉️</span>info@example.com</p>
+        <p><span class="icon">⏰</span>Mon-Fri, 9:00–4:00</p>
+    </div>
+
+    <!-- Address -->
+    <div class="footer-column">
+        <h3>Address</h3>
+        <p>OFFICE NO. 216 SECOND FLOOR LEELA<br>
+            GRANDUER PUNE SOLAPUR ROAD<br>
+            MANJARI TALUKA HAVELI DIST PUNE 412307</p>
+        <a href="#" class="icon">📍 Google Map link</a>
+    </div>
+
+    <!-- Useful Pages -->
+    <div class="footer-column">
+        <h3>Useful pages</h3>
+        <a href="#">▶ Home</a><br>
+        <a href="#">▶ About</a><br>
+        <a href="#">▶ Project</a><br>
+        <a href="#">▶ Contact</a>
+    </div>
+
+    <!-- About Company -->
+    <div class="footer-column">
+        <h3>About Company</h3>
+        <p>Praesent dapibus neque id cursus faucibus tortor neque egestas augue eu vulputate magna eros eu erat.</p>
+        <a href="#" class="button">Learn more</a>
+    </div>
+</div>
+</body>
+</html>
+</body>
+</html>

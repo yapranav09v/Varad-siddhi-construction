@@ -8,7 +8,8 @@ module.exports = {
         index: path.resolve(__dirname, 'src/index.js'),
         about: path.resolve(__dirname, 'src/about.js'),
         auth: path.resolve(__dirname, 'src/auth.js'),
-        database: path.resolve(__dirname, 'src/database.js')
+        database: path.resolve(__dirname, 'src/database.js'),
+        project: path.resolve(__dirname, 'src/project.js')
     },
     output: {
         path : path.resolve(__dirname, 'dist'),
@@ -76,6 +77,12 @@ module.exports = {
             template: path.resolve(__dirname, 'src/views/about.html'),
             inject: 'body',
             chunks: ['about'],
+        }),
+        new htmlWebpackPlugin({
+            filename: 'project.html',
+            template: path.resolve(__dirname, 'src/views/project.html'),
+            inject: 'body',
+            chunks: ['project'],
         }),
 
         
