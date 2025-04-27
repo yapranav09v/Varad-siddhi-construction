@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.d1{
+    height: 100%;
+    width: 100%;
+}
+
+.LP{
+    padding: 1.2rem;
+}
+
+.Lhead1{
+    margin-top: 0.5rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: #030F27;
+    text-align: center;
+}
+
+.Lhead2{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #FDBE33;
+    text-align: center;
+}
+
+.Lheader2{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    min-height: 60px;
+    background-color:#030F27;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: relative;
+}
+
+.LN2{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.Lh4{
+    margin-top: 0.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.Lh5{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Lh2{
+    font-size: 1rem;
+}
+
+.Lh42{
+    font-size: 1.5rem;
+    color: #FDBE33;
+}
+
+.Lpara{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.learnPara{
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-wrap: pretty;
+}
+
+.lmd2{
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-wrap: pretty;
+}
+
+.lm{
+    font-size: 1rem;
+    font-weight: lighter;
+    width:50%;
+}
+
+.lbox{
+    width: 90%;
+}
+
+.lcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    text-wrap: pretty;
+}
+
+.rbox{
+    align-items: right;
+    height: 45%;
+}
+
+.Limg{
+   height: 18rem;
+   width: 22rem;
+   border-radius: 1rem;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Lbtn{
+    background-color: #FDBE33;
+    border-radius: 0.4rem;
+    width: 6rem;
+    height: 2rem;
+    margin-top: 1rem;
+    color:#030F27;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .lcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lbox {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .rbox {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .learnPara {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Lhead1 {
+        font-size: 1.8rem;
+    }
+    
+    .Lhead2 {
+        font-size: 1.5rem;
+    }
+    
+    .Lh4 {
+        font-size: 1.5rem;
+    }
+    
+    .Lh5, .Lh42 {
+        font-size: 1.3rem;
+    }
+    
+    .Lpara {
+        font-size: 1.5rem;
+    }
+    
+    .Lheader2 {
+        flex-wrap: wrap;
+        padding: 1rem 0;
+    }
+    
+    .LN2 {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Lhead1 {
+        font-size: 1.5rem;
+    }
+    
+    .Lhead2 {
+        font-size: 1.2rem;
+    }
+    
+    .Lh4 {
+        font-size: 1.3rem;
+    }
+    
+    .Lh5, .Lh42 {
+        font-size: 1.1rem;
+    }
+    
+    .Lpara {
+        font-size: 1.3rem;
+    }
+    
+    .learnPara, .lmd2 {
+        font-size: 0.9rem;
+    }
+    
+    .Limg {
+        height: 15rem;
+        width: 18rem;
+    }
+    
+    .Lbtn {
+        width: 5.5rem;
+        height: 1.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .Lheader2 {
+        flex-direction: column;
+    }
+    
+    .LN2 {
+        padding: 0.3rem;
+    }
+    
+    .Limg {
+        height: 12rem;
+        width: 15rem;
+    }
+}
+
+.Lvideo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between videos */
+    flex-wrap: wrap; /* Videos will wrap nicely on small screens */
+    margin-top: 2rem;
+}
+
+.Lv {
+    height: 350px; /* Reduced height */
+    width: 480px;  /* Consistent width */
+    object-fit: cover; /* Makes sure the video fills nicely */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Optional: small shadow */
+}
