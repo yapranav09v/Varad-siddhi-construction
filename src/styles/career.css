@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+body {
+    background-color: #ffffff;
+}
+nav {
+  background-color: #0c1325;
+  padding: 0.9rem 0;
+  text-align: left; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; 
+  gap: 5rem;
+  margin-left: 5rem; 
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    padding: 100px 20px;
+    overflow: hidden;
+    background: white;
+  }
+  
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -70%;       
+    left: -100%;    
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+      -45deg,
+      #ffffff 0%,    
+      #ffffff 5%,
+  
+      #03152d 5%,    
+      #03152d 45%,
+  
+      #ffffff 45%,   
+      #ffffff 55%,
+  
+      #03152d 55%,   
+      #03152d 80%,
+  
+      #ffffff 80%,  
+      #ffffff 100%
+    );
+    transform: rotate(10deg); 
+    z-index: 0;
+  }
+  
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 75rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero-text {
+    color: white;
+    max-width: 31.25rem;
+    margin-top: 2rem;
+  }
+  
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+  
+  .hero-text h1 span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f9b233;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text button {
+    background-color: #f9b233;
+    color: black;
+    padding: 0.75rem 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+ 
+  .hero-images {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .left-image img {
+    height: 320px;
+    border-radius: 15px;
+  }
+  
+  .right-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .right-images img {
+    height: 150px;
+    border-radius: 15px;
+  }
+  
+  
+.jobs {
+    background-color: #fbbc04;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+   
+}
+#job-text{
+  text-align: center;
+  padding-top: 2rem;
+  color: #ffffff;
+}
+.job-div-left{
+  display: inline;
+  margin-left: 4rem;
+}
+.job-div-left img {
+  width: 24rem;
+  height: 24rem;
+  margin-top: 4rem;
+}
+
+.job-list {
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:3rem;
+    max-width: 37.5rem;
+    margin-top: -24rem;
+    margin-left: 32rem;
+    margin-bottom: 10rem;
+    padding: 2rem;
+}
+.job-box {
+    background-color: #0c1325;
+    color: white;
+    padding: 0.93rem;
+    border-radius: 5px;
+}
+.learn-more {
+  background-color: #0c1325;
+  color: #f9b233;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto 0 auto;
+  display: block;  
+  bottom: 2.1rem;
+  
+  
+}
+
+.footer-f {
+  height: 300px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #030b1c;
+}
+.footer-columnf {
+  padding-top: 2px;
+  flex: 1;
+  min-width: 220px;
+  line-height: 1.5rem;
+}
+.footer-columnf h3 {
+  font-size: 18px;
+  color: #f4a300;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.footer-itemf {
+  display: flex;
+  align-items: start;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.footer-itemf img {
+  width: 20px;
+  margin-right: 12px;
+}
+.footer-itemf a, .footer-item span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.about-textf {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.learn-more-buttonf {
+  background-color: #f4a300;
+  color: #000000;
+  border: none;
+  padding: 4px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.learn-more-buttonf:hover {
+  background-color: #d38e00;
+}
