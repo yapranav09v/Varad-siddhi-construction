@@ -23,7 +23,7 @@ module.exports = {
         static:{
             directory: path.resolve(__dirname, 'dist')
         },
-        port: 3008,
+        port: 3002,
         open: true,
         hot: true,
         compress: true,
