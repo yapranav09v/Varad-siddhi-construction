@@ -863,24 +863,24 @@ text-container{
 }
 
 
-
-.staff-images{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 90rem;
-    height: 53rem;
-    /* border: 2px solid black; */
-    padding-left: 12rem;
-    row-gap: 3rem;
-
+ .staff-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
+
  .img1,
 .img2,
 .img3,
 .img4,
 .img5,
-.img6{
+.img6,
+#img7,
+#img8{
     /* border:2px solid black; */
     width: 20rem;
     height: 24rem;
@@ -961,7 +961,9 @@ text-container{
 #img3-para1,
 #img4-para1,
 #img5-para1,
-#img6-para1{
+#img6-para1,
+#img7-para1,
+#img8-para1{
     color: #FDBE33;
     padding-left: 7rem;
 }
@@ -970,7 +972,9 @@ text-container{
 #img3-para2,
 #img4-para2,
 #img5-para2,
-#img6-para2{
+#img6-para2,
+#img7-para2,
+#img8-para2{
     color: #F1E6E6;
     padding-left:7rem ;
 }
@@ -998,11 +1002,29 @@ text-container{
     width: 20rem;
     height: 18rem;
 }
+#img7 img{
+    width: 20rem;
+    height: 18rem;
+}
+
+#img8 img{
+    width: 20rem;
+    height: 18rem;
+}
+.hidden {
+  display: none !important;
+}
+
+
+/* .staff-card hidden img{
+    width: 20rem;
+    height: 18rem;
+} */
 
   .add-emp{
     width: 44vw;
     height: 10vh;
-    /* border: 2px solid black; */
+    /* border: 2px solid black;*/
     padding-left: 42rem;
   }
   #add-btn{
@@ -1018,7 +1040,7 @@ text-container{
 .FAQ-section{
     width: 87rem;
     height: 40rem;
-    /* border: 2px solid black; */
+    /* border: 2px solid black;*/
     padding-top: 0%;
 } 
 #FAQ{
@@ -1043,7 +1065,6 @@ text-container{
     height: 6rem;
     margin-left: auto;
     margin-right: 18%;
-    
     
 }
   .faq-question {

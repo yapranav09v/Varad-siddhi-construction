@@ -10,7 +10,8 @@ module.exports = {
         auth: path.resolve(__dirname, 'src/auth.js'),
         database: path.resolve(__dirname, 'src/database.js'),
         project: path.resolve(__dirname, 'src/project.js'),
-        project: path.resolve(__dirname, 'src/career.js')
+        career: path.resolve(__dirname, 'src/career.js'),
+        team:path.resolve(__dirname, 'src/team.js'),
     },
     output: {
         path : path.resolve(__dirname, 'dist'),
@@ -70,7 +71,7 @@ module.exports = {
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/views/Home.html'),
             inject: 'body',
-            chunks: ['index', 'database', 'auth']
+            chunks: ['index', 'database', 'auth','team']
         }),
 
         new htmlWebpackPlugin({
