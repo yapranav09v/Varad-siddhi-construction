@@ -10,7 +10,8 @@ module.exports = {
         auth: path.resolve(__dirname, 'src/auth.js'),
         database: path.resolve(__dirname, 'src/database.js'),
         project: path.resolve(__dirname, 'src/project.js'),
-        project: path.resolve(__dirname, 'src/career.js')
+        project: path.resolve(__dirname, 'src/career.js'),
+        form: path.resolve(__dirname,'src/form.js')
     },
     output: {
         path : path.resolve(__dirname, 'dist'),
@@ -90,6 +91,13 @@ module.exports = {
             template: path.resolve(__dirname, 'src/views/career.html'),
             inject: 'body',
             chunks: ['career'],
+        }),
+
+        new htmlWebpackPlugin({
+            filename: 'form.html',
+            template: path.resolve(__dirname, 'src/views/form.html'),
+            inject: 'body',
+            chunks: ['form'],
         }),
 
         
