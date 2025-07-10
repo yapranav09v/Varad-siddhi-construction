@@ -176,7 +176,7 @@ nav ul li a {
     padding: 0.93rem;
     border-radius: 5px;
 }
-.learn-more {
+/* .learn-more {
   background-color: #0c1325;
   color: #f9b233;
   padding: 10px 20px;
@@ -188,6 +188,26 @@ nav ul li a {
   bottom: 2.1rem;
   
   
+} */
+.jobs .learn-more {
+  display: block;
+  margin: 0rem auto 0rem auto; /* top, horizontal (auto=center), bottom */
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color:   #0c1325;
+  border-radius: 2px solid ;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.jobs .learn-more:hover {
+  background-color: #29324d;
+}
+.jobs {
+  padding-bottom: 4rem;
 }
 
 .footer-f {

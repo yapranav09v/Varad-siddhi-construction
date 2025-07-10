@@ -1,0 +1,84 @@
+/* Base and background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    /* background: url('construction-bg.jpg') no-repeat center center/cover; */
+    color:white;
+  }
+  
+  .overlay {
+    background-color: white; /* #030F27 with transparency */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Login container */
+  .login-box {
+    background-color:#030F27;
+    padding: 40px 35px;
+    border-radius: 10px;
+    width: 360px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    border-bottom: 2px solid #030F27;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Input fields */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color:#FDBE33 ;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: white;
+  }
+  
+  /* Message */
+  #message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: red;
+  }
+  
