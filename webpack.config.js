@@ -10,13 +10,10 @@ module.exports = {
         auth: path.resolve(__dirname, 'src/auth.js'),
         database: path.resolve(__dirname, 'src/database.js'),
         project: path.resolve(__dirname, 'src/project.js'),
-<<<<<<< HEAD
-        project: path.resolve(__dirname, 'src/career.js'),
-        form: path.resolve(__dirname,'src/form.js')
-=======
+        // project: path.resolve(__dirname, 'src/career.js'),
+        form: path.resolve(__dirname,'src/form.js'),
         career: path.resolve(__dirname, 'src/career.js'),
         team:path.resolve(__dirname, 'src/team.js'),
->>>>>>> 89c804dc502f1b89f1372ca7a7a30871a74a065c
     },
     output: {
         path : path.resolve(__dirname, 'dist'),
