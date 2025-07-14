@@ -31,6 +31,8 @@ body {
 .navbar-custom .navbar-brand {
   color: #fff;
   font-weight: 500;
+  font-size: larger;
+  font-family: Poppins,sans-serif;
 }
 .navbar-custom .nav-link:hover {
   color: #ffc107;
