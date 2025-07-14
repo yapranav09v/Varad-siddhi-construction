@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 .project-card img {
-  height: 200px;
+  height: 150px;
   object-fit: cover;
 }
 .footer {
